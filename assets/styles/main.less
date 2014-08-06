@@ -1,0 +1,287 @@
+/*global*/
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', Sans-serif;
+    color: #444;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    a{
+        text-decoration: underline;
+    }
+}
+.page {
+    background: #fff;
+    min-height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    box-shadow: 0px 4px 15px #181818;
+    padding-bottom: 16px;
+    overflow-x: hidden;
+}
+#logo{
+    float: left;
+    background: url(/assets/images/logo.png) left center no-repeat;
+    width: 180px;
+    height: 72px;
+    a {
+        display: block;
+        text-indent: -999em;
+    }
+}
+.header-menu{
+    list-style-type: none;
+    margin: 26px auto;
+    li{
+        display: block;
+        float: left;
+        border-right: 1px solid #F0EEEE;
+        padding: 0 10px;
+        &.no-border{
+            border: none;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #666;
+    }
+    .mess-num{
+        background: #E74343;
+        padding: 0 2px;
+        min-width: 15px;
+        height: 15px;
+        text-align: center;
+        line-height: 16px;
+        margin-left: 5px;
+        border-radius: 2px;
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+.main-menu{
+    width: 100%;
+    background: #007ad5;
+    margin-bottom: 16px;
+    .item{
+        position: relative;
+        font-size: 16px;
+        a{
+            color: #FFFFFF;
+            border-radius: 0;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+        }
+        &.on{
+            background-color: rgba(255, 255, 255, 0.2);
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
+.page-header{
+    margin: 16px 0;
+}
+.dividing-header{
+    i{
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 16px;
+    }
+    .content{
+        font-size: 21px;
+        font-weight: bold;
+        display: table-cell;
+        padding-left: 10px;
+        vertical-align: top;
+    }
+    .sub-header{
+        font-size: 14px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 1.6;
+    }
+}
+.footer {
+    width: 100%;
+    height: 150px;
+    min-width: 1200px;
+    background: #323232;
+    position: absolute;
+    z-index: -20;
+}
+#copyrights {
+    margin: 0 auto;
+    height: 140px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -15;
+    .inset {
+        margin: 0 auto;
+        padding: 20px 50px 0;
+        position: relative;
+    }
+    .logo {
+        width: 164px;
+        height: 40px;
+        background: url(/assets/images/logo_footer.png);
+        text-indent: -999em;
+    }
+    .fl {
+        float: left;
+    }
+    p {
+        font-size: 12px;
+        color: #a0a0a0;
+        line-height: 24px;
+    }
+    a {
+        color: #666;
+        text-decoration: none;
+    }
+}
+/*index page*/
+.info-panel{
+    display: block;
+    border: 1px solid #eee;
+    color: #666;
+    margin:16px 0;
+}
+.panel-header{
+    position: relative;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.01);
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid;
+    border-left-width: 3px;
+    border-left-color: #178EFE;
+    .user-name{
+        padding-bottom: 10px;
+    }
+    .user-des{
+        line-height: 1;
+        font-size: 12px;
+    }
+    .update{
+        color:#f00;
+        margin: 0 10px;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        margin-left: -0.3em;
+        width: 9px;
+        height: 9px;
+        top: 50%;
+        margin-top: -0.3em;
+        right: -0.4em;
+        bottom: auto;
+        left: auto;
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        background-image: none;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        z-index: 2;
+        background-color: #FCFCFC;
+    }
+}
+.panel-body{
+    padding: 20px 30px;
+    .num{
+        margin: 16px auto;
+    }
+    .unit{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .progress{
+        margin: 16px auto;
+    }
+    .progress-dis{
+        position: absolute;
+        left: 98px;
+        font-size: 12px;
+        z-index: 9;
+        line-height: 1.9;
+        color: #444;
+        text-shadow: 1px 1px 0 #eee;
+    }
+}
+.segment{
+    height: 119px;
+    border-left: 2px solid #007ad5;
+    overflow-y: auto;
+    background-color: #fafafa;
+    font-size: 14px;
+    margin: 20px 0;
+    a{
+        position: relative;
+        padding: 16px;
+        display: block;
+        text-decoration: none;
+        &:hover,&:focus{
+            background-color:  #b4ddf5;
+            .new-device{
+                i{
+                    color: #007ad5;
+                }
+            }
+        }
+        .new-device{
+            color: #666;
+            vertical-align: middle;
+            text-align: center;
+            margin: 7.5px auto;
+            i{
+                color: #ccc;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+        }
+        .device-name{
+            font-size: 16px;
+            color: #333;
+            padding-bottom: 10px;
+            font-weight: bold;
+            .label{
+                padding: 2px 2px 1px;
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+        p{
+            margin: 0;
+            .label{
+                display: inline-block;
+                padding: 5px;
+                border-radius: 0;
+            }
+        }
+
+    }
+}
+
+/*client-device page*/
+.callout {
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 3px;
+    &.callout-device{
+        border-left-color:#007ad5;
+    }
+}
