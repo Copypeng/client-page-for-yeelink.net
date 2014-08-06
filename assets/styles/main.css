@@ -313,12 +313,10 @@ a {
   overflow: hidden;
   padding: 10px 0;
   margin: 20px 0;
-  border: 1px solid #eee;
-  border-left-width: 3px;
   background-color: #FAFAFA;
 }
 .callout.callout-device {
-  border-left-color: #007ad5;
+  border-left: 3px solid #007ad5;
 }
 .callout p {
   margin: 5px auto;
@@ -342,4 +340,10 @@ a {
   padding: 2px 2px 1px;
   font-weight: normal;
   font-size: 12px;
+}
+/*client-device details page*/
+.device-img {
+  width: 160px;
+  height: 160px;
+  background: url(/assets/images/device.png);
 }
