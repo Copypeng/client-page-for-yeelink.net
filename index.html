@@ -167,6 +167,15 @@
                 </div>
             </div>
         </div>
-    </script><script src="/assets/scripts/seajs/sea.js" data-config="/resource/js/config" id="seajsnode"></script>
+    <script src="/assets/scripts/sea-modules/seajs/2.3.0/dist/sea.js" id="seajsnode"></script>
+    <script>
+        seajs.use('/assets/scripts/config',function(){
+
+            seajs.use('jquery',function($){
+                console.log($);
+            });
+
+        });
+    </script>
     </body>
 </html>

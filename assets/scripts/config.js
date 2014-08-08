@@ -1,7 +1,9 @@
 seajs.config({
 
     alias:{
-        'jquery':'/jquery/jquery-1.11.1.min.js',
-        '':
+        'jquery':'/assets/scripts/sea-modules/jquery/1.8.3/jquery-cmdized',
+        'tooltips': '/assets/scripts/tooltips',
+        'tipper': '/assets/scripts/sea-modules/tipper/jquery.fs.tipper'
     }
-})
+
+});
