@@ -272,12 +272,12 @@ a {
 }
 .panel-body .progress {
   margin: 16px auto;
+  position: relative;
 }
 .panel-body .progress-dis {
   position: absolute;
-  left: 98px;
+  left: 54px;
   font-size: 12px;
-  z-index: 9;
   line-height: 1.9;
   color: #444;
   text-shadow: 1px 1px 0 #eee;

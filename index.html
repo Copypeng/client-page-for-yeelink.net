@@ -37,7 +37,7 @@
             <div class="main-content">
                 <div class="container">
                     <div class="col-md-3">
-                        <div class="info-panel">
+                        <div class="info-panel" style="display:none">
                             <div class="panel-header pointer">
                                 <div class="row">
                                 <div class="col-md-5">
@@ -60,16 +60,16 @@
                                     <h2 class="num text-center">3 <span class="unit">个</span></h2>
                                     <p class="name">图片空间</p>
                                     <div class="progress">
+                                      <div class="progress-dis mb">100MB / 200MB</div>
                                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
                                         <span class="sr-only">50% Complete (success)</span>
                                       </div>
-                                      <span class="progress-dis mb">100MB / 200MB</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 right-panel" style="display:none">
 
                         <h4 class="page-header">
                             <div class="dividing-header">
@@ -170,9 +170,9 @@
     <script src="/assets/scripts/sea-modules/seajs/2.3.0/dist/sea.js" id="seajsnode"></script>
     <script>
         seajs.use('/assets/scripts/config',function(){
-
-            seajs.use('jquery',function($){
-                console.log($);
+            seajs.use(['jquery','velocity','velocity-ui'],function($){
+                $('.info-panel').velocity("transition.slideLeftIn",2000);
+                $('.right-panel').velocity("transition.slideRightIn",2000);
             });
 
         });
